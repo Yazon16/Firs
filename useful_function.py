@@ -2,7 +2,7 @@ from pygost.gost34112012256 import GOST34112012256
 import binascii
 from Crypto.Random import get_random_bytes
 
-# Используем гост для хэширования данных
+# функция для использования госта для генерации хэша
 def streebog_hash(data):
     hasher = GOST34112012256()
     hasher.update(data)
